@@ -11,3 +11,6 @@ podman pull docker.io/walac/rhel8-build:latest
 
 podman run -it -v <source dir>:/rhel8 -w /rhel8 docker.io/walac/rhel8-build:latest 
 ```
+
+If you have permission problems with the volume inside the container,
+try running it with the `--security-opt label=disable` option.
